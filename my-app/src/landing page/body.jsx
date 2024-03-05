@@ -5,7 +5,7 @@ import { Box, Flex, Heading } from '@chakra-ui/react';
 const Content = () => {
   return (
     <Box
-    backgroundImage="url('../images/cover.jpg')"
+    backgroundImage="url('../images/java.png')"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundBlendMode="overlay"

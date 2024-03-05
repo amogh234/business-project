@@ -1,11 +1,14 @@
 import React from 'react';
 import { Box, Flex, Heading, Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import java from '../images/java.png';
+import node from '../images/node.png';
+import react from '../images/react.png'
 
 const expertiseItems = [
-  { name: 'React', imageSrc: '../images/react.png' },
-  { name: 'Node.js', imageSrc: '../images/node.png' },
-  { name: 'Java', imageSrc: '../images/java-image.jpg' },
+  { name: 'React', imageSrc:react  },
+  { name: 'Node.js', imageSrc: node },
+  { name: 'Java', imageSrc: java },
 ];
 
 const ExpertiseSection = () => {
@@ -21,8 +24,7 @@ const ExpertiseSection = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <Flex direction="column" alignItems="center">
-              <Image src={item.imageSrc}boxSize="100px" mb={4} />
-              
+              <Image src={item.imageSrc.default} boxSize="100px" mb={4} />
             </Flex>
           </motion.div>
         ))}
