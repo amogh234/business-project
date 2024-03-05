@@ -1,15 +1,11 @@
 import React from 'react';
 import { Box, Flex, Heading } from '@chakra-ui/react';
 
-
 const Content = () => {
   return (
     <Box
-    backgroundImage="url('../images/java.png')"
+      backgroundImage="url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg')"
       backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundBlendMode="overlay"
-      background="linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))"
       height="80vh"
       display="flex"
       alignItems="center"
