@@ -7,13 +7,12 @@ import Content from './landing page/body';
 import ExpertiseSection from './landing page/middlepage'
 
 
-
 function App() {
   return (
     
      <ChakraProvider>
       
-
+    
       <Navbar/>
       <Content/>
       <ExpertiseSection/>

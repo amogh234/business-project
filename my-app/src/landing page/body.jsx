@@ -18,7 +18,7 @@ const Content = () => {
         <Heading as="h1" size="2xl" mb="4">
           About Our Company
         </Heading>
-        <p>Your company description goes here...</p>
+        <p>Your company description goes mere laude kdfjlsjdl</p>
       </Flex>
     </Box>
   );
