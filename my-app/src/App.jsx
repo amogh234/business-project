@@ -1,27 +1,24 @@
 
-
 import React from 'react';
-import { ChakraProvider} from '@chakra-ui/react'
-import Navbar from './landing page/navbar'
-import Content from './landing page/body';
-import ExpertiseSection from './landing page/middlepage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter and Routes
+import { ChakraProvider } from '@chakra-ui/react';
+import Navbar from './landing page/navbar';
+import ContactForm from './landing page/contact';
+import Content from "./landing page/body";
 
-
-
-function App() {
+const App = () => {
   return (
-    
-     <ChakraProvider>
-      
-
-      <Navbar/>
-      <Content/>
-      <ExpertiseSection/>
-
-
-      
+    <ChakraProvider>
+      <Router> {/* Use BrowserRouter */}
+        <Routes>
+          <Route path="/" exact element={<Navbar />} /> {/* Use element prop */}
+          <Route path="/Contact" element={<ContactForm />} /> {/* Use element prop */}
+        </Routes>
+      </Router>
+      <Content />
+      <ContactForm/>
     </ChakraProvider>
   );
-}
+};
 
 export default App;
