@@ -12,13 +12,13 @@ const contactRoute_js_1 = __importDefault(require("./routes/contactRoute.js"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, morgan_1.default)("dev"));
-// using routes
+// using route
 app.use("/api/v1/contact", contactRoute_js_1.default);
 app.get("/", (req, res) => {
-    res.send("working");
+    res.send("working on another desktop");
 });
 app.use(error_1.errorMiddleware);
 (0, feature_1.connectDB)();
 app.listen(4000, () => {
-    console.log("Server is working on port 4000");
+    console.log("Server is currently working on port 4000");
 });

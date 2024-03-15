@@ -14,11 +14,11 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 
-// using routes
+// using route
 app.use("/api/v1/contact", contactRoute);
 
 app.get("/", (req, res) => {
-    res.send("working");
+    res.send("working on another desktop");
 })
 
 app.use(errorMiddleware);
@@ -26,5 +26,5 @@ app.use(errorMiddleware);
 
 connectDB();
 app.listen(4000, () => {
-    console.log("Server is working on port 4000");
+    console.log("Server is currently working on port 4000");
 })
